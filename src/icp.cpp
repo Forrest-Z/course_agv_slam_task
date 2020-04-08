@@ -120,7 +120,7 @@ void icp::process(sensor_msgs::LaserScan input)
     this->publishResult(Transform_acc);
 
 	double time_1 = (double)ros::Time::now().toSec();
-	cout<<"time_cost:  "<<time_1-time_0<<endl;
+	// cout<<"time_cost:  "<<time_1-time_0<<endl;
 }
 
 Eigen::MatrixXd icp::rosmsgToEigen(const sensor_msgs::LaserScan input)
